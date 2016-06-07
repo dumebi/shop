@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+	<header>
+		 <title>Header Block</title>
+		 <description></description>
+	 	 <module>
+	 	 	<title>Banner</title>
+	 	 	<field>
+	 	 		<name>widget_banner</name>
+	 	 		<label>Content</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default><![CDATA[<img src="image/data/banner/banner1.png"/>]]></default>
+	 		</field>
+	 	 </module>	
+	</header>
+
+	<footer>
+		 <title>Footer Block</title>
+		 <description></description>
+	 	 <module>
+	 	 	<title>Paypal</title>
+	 	 	<field>
+	 	 		<name>widget_paypal</name>
+	 	 		<label>Paypal</label>
+	 	 		<type>textarea</type>
+	 	 		<lang>1</lang>
+	 	 		<default><![CDATA[<img src="image/data/paypal.png"/>]]></default>
+	 		</field>
+	 	 </module>	
+	</footer>
+
+</theme>

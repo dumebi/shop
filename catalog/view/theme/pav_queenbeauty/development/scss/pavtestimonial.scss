@@ -1,0 +1,129 @@
+@import "compass";
+
+@import "vars/opencart";
+@import "vars/bootstrap";
+
+
+@import "mixins/app";
+@import "mixins/bootstrap";
+
+
+.pavtestimonial {
+    color: white;
+    .inner{
+        position: relative;
+    }
+    .testimonial-content{
+        height: 150px;
+        overflow: hidden;
+    }
+    .item{
+        padding: 20px 0px 0;
+    }
+    .description{
+        font-size: 18px;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 24px;
+        padding: 0;
+        color: white;
+        @include rtl-margin-right(20px);
+    }
+    .t-avatar{
+        @include rtl-float-left();
+        @include rtl-margin-right(20px);
+    }
+    .testimonial-meta{
+        overflow: hidden;
+    }
+    .profile{
+      padding-top:15px;
+    }
+    .colorbox-t{
+        display: none;
+    }
+    .carousel-indicators {
+        width: auto;
+        @include rtl-right(10px);
+        padding: 0;
+        top:35px;
+        @include rtl-left(97%);
+        margin-left:0;
+        .bullet {
+              position: relative;
+              background:none;
+              border: 1px solid #867c64;
+              display: block;
+              margin: 10px;
+              padding: 5px;
+              z-index: 20;
+              &.active {
+                  background: white;
+              }
+              &:before{
+                  position: absolute;
+                  content: "";
+                  background: #867c64;
+                  width: 1px;
+                  height: 11px;
+                  top: 10px;
+                  right: 5px;
+              }
+              &:last-child:before{
+                  content:none;
+              }
+        }
+    }
+  .carousel-inner {
+
+      > .item {
+
+        @include transition(.6s ease-in-out top);
+
+        // Account for jankitude on images
+        > img,
+        > a > img {
+          @include img-responsive();
+          line-height: 1;
+        }
+      }
+
+      > .active,
+      > .next,
+      > .prev {
+        display: block;
+      }
+
+      > .active {
+        top: 0;
+      }
+
+      > .next,
+      > .prev {
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+
+      > .next {
+        top: -100%;
+      }
+      > .prev {
+        top: 100%;
+      }
+      > .next.left,
+      > .prev.right {
+        top: 0;
+      }
+
+      > .active.left {
+        left: -100%;
+      }
+      > .active.right {
+        left: 100%;
+      }
+
+  }
+
+}
+

@@ -1,0 +1,21 @@
+a:1:{i:1;a:6:{s:9:"layout_id";s:5:"99999";s:8:"position";s:10:"footer_top";s:6:"status";s:1:"1";s:10:"sort_order";i:1;s:11:"description";a:2:{i:1;s:72:"&lt;p&gt;&lt;strong&gt;Sign up &lt;/strong&gt;for newsletter&lt;/p&gt;
+";i:2;s:221:"&lt;p&gt;&lt;span class=&quot;short_text&quot; id=&quot;result_box&quot; lang=&quot;ar&quot;&gt;&lt;span class=&quot;hps&quot;&gt;الاشتراك في النشرة الإخبارية&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+";}s:6:"social";a:2:{i:1;s:760:"&lt;div class=&quot;social&quot;&gt;
+&lt;ul class=&quot;clearfix&quot;&gt;
+	&lt;li&gt;&lt;a class=&quot;fa fa-facebook&quot; href=&quot;#&quot; title=&quot;facebook&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;fa fa-twitter&quot; href=&quot;#&quot; title=&quot;twitter&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;fa fa-google-plus&quot; href=&quot;#&quot; title=&quot;google-plus&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;fa fa-pinterest&quot; href=&quot;#&quot; title=&quot;pinterest&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;fa fa-rss&quot; href=&quot;#&quot; title=&quot;rss&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+";i:2;s:627:"&lt;div class=&quot;social&quot;&gt;
+&lt;ul class=&quot;clearfix&quot;&gt;
+	&lt;li&gt;&lt;a class=&quot;fa fa-facebook&quot; href=&quot;#&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;fa fa-twitter&quot; href=&quot;#&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;fa fa-google-plus&quot; href=&quot;#&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;fa fa-pinterest&quot; href=&quot;#&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;fa fa-rss&quot; href=&quot;#&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+";}}}

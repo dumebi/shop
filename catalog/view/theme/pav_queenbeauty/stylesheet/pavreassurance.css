@@ -1,0 +1,122 @@
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/**
+ * Product Item Selectors
+ */
+/***********************************************************************/
+/*
+ * LAYOUT VARIABLES
+ */
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/*inline-block
+============================================*/
+/****/
+/* RIGHT TO LEFT */
+/* line 12, ../development/scss/pavreassurance.scss */
+.box-module-pavreassurances .icon-name {
+  width: 70px;
+  height: 70px;
+  background: #e1e1e1;
+  font-size: 30px;
+  color: white;
+  margin-right: 30px;
+  vertical-align: top;
+  line-height: 70px;
+}
+/* line 336, ../development/scss/mixins/_app.scss */
+.rtl .box-module-pavreassurances .icon-name {
+  margin-left: 30px;
+  margin-right: inherit;
+}
+/* line 21, ../development/scss/pavreassurance.scss */
+.box-module-pavreassurances .description {
+  vertical-align: top;
+  text-align: left;
+}
+/* line 325, ../development/scss/mixins/_app.scss */
+.rtl .box-module-pavreassurances .description {
+  text-align: right;
+}
+/* line 24, ../development/scss/pavreassurance.scss */
+.box-module-pavreassurances .description p {
+  color: #9c9c9c;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 20px;
+}
+/* line 30, ../development/scss/pavreassurance.scss */
+.box-module-pavreassurances .description h4 {
+  color: #7b0046;
+  font-size: 12px;
+  line-height: 1.42857;
+  padding-bottom: 15px;
+}
+/* line 37, ../development/scss/pavreassurance.scss */
+.box-module-pavreassurances h4, .box-module-pavreassurances p {
+  margin: 0;
+}
+/* line 40, ../development/scss/pavreassurance.scss */
+.box-module-pavreassurances .reassurances-left {
+  position: relative;
+  padding: 20px 0;
+  text-align: center;
+}
+/* line 45, ../development/scss/pavreassurance.scss */
+.box-module-pavreassurances .reassurances-left:hover .icon-name {
+  color: #7b0046;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+/* line 49, ../development/scss/pavreassurance.scss */
+.box-module-pavreassurances .reassurances-left:hover h4 {
+  color: black;
+}
+/* line 54, ../development/scss/pavreassurance.scss */
+.box-module-pavreassurances .arrow {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 424, ../development/scss/mixins/_app.scss */
+.rtl .box-module-pavreassurances .arrow {
+  right: 0;
+  left: auto;
+}
+
+/* line 63, ../development/scss/pavreassurance.scss */
+.title_detail h4 {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 50px;
+  color: #7b0046;
+}
+
+/* line 69, ../development/scss/pavreassurance.scss */
+.title_detail .icon-name {
+  color: #7b0046;
+  font-size: 170px;
+  margin: 0 20px;
+}
+
+/* line 74, ../development/scss/pavreassurance.scss */
+.title_detail p {
+  color: #7b0046;
+  font-size: 15px;
+  margin: 25px 0 0;
+}
+
+/* line 79, ../development/scss/pavreassurance.scss */
+.info {
+  overflow: hidden;
+}

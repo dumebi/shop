@@ -1,0 +1,17 @@
+//
+#logo-theme{
+  a{
+    background: url('#{$image-theme-path-base}logo.png') no-repeat;
+  }
+}
+.icon-cart{
+    background:url('#{$image-theme-path-base}cart.png') no-repeat;
+}
+abbr + *,abbr + * + *{
+  color: #000;
+}
+.footer-center {
+  .fa{
+    color: $theme-color;
+  }
+}

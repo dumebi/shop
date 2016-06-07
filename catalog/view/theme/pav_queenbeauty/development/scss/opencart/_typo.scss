@@ -1,0 +1,74 @@
+//
+// Color box
+// --------------------------------------------------
+#colorbox{
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    box-sizing: content-box;
+} 
+.no-padding { padding: 0!important; }
+.padding{ padding-top: 50px;}
+.padding-inline{ padding: 15px 0;}
+.required {
+  color: #FF0000;
+  font-weight: normal;
+  font-size: $font-size-base - 1;
+}
+
+.success, .warning, .attention, .information {
+  @include rtl-padding(10px,10px,10px,33px);  
+  margin: $line-height-computed 0;
+  color: #555555;
+  @include rounded-corners(5px );
+}
+.success .close, .warning .close, .attention .close, .information .close {
+  @include rtl-float-right();
+  padding-top: 4px;
+  @include rtl-padding-right(4px);
+  cursor: pointer;
+}
+.attention {
+  background: #FFF5CC url('#{$image-theme-path}attention.png')no-repeat;
+  @include rtl-background-position-left( 10px center);
+  border: 1px solid #F2DD8C;
+  @include rounded-corners( 5px );
+}
+.warning {  
+  background: #FFD1D1 url('#{$image-theme-path}warning.png') no-repeat;
+  @include rtl-background-position-left( 10px center);
+  border: 1px solid #F8ACAC;
+  @include rounded-corners( 5px );
+}
+.success {
+  background: #EAF7D9 url('#{$image-theme-path}success.png')no-repeat;
+  @include rtl-background-position-left( 10px center);
+  border: 1px solid #BBDF8D;
+  @include rounded-corners( 5px );
+}
+.valid{
+    position: absolute;
+    width: 100%;
+}
+.help {
+  color: #999;
+  font-size: 10px;
+  font-weight: normal;  
+  display: block;
+}
+.error {
+  color: #FF0000; 
+} 
+
+.welcome {
+  color: #636E75;  
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: $font-size-base + 7;
+  font-weight: normal;
+  text-shadow: 0 0 1px rgba(0, 0, 0, .01);
+}
+.border-box{
+    border:1px solid $border-color;
+}

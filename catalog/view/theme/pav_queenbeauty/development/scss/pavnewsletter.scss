@@ -1,0 +1,81 @@
+@import "compass";
+
+@import "vars/opencart";
+@import "vars/bootstrap";
+
+
+@import "mixins/app";
+@import "mixins/bootstrap";
+
+@import "rtl/mixins";
+
+.pav-newsletter{
+    @include rtl-float-left();
+    .box-heading{
+        display: none;
+    }
+    .explain{
+        font-size:14px;
+        color:$gray-light ;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding: 0 60px;
+        line-height: $input-height-base;
+        >*{
+            margin: 0px;
+        }
+    }
+    .input-inverse{
+        background:#f4f4f4 ;
+        border: none;
+    }
+    .email{
+        min-width: 400px;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 11px;
+        color: $gray-light;
+    }
+    .fa-envelope{
+        font-size: 14px;
+    }
+    .btn-newsletter{
+        z-index: 2;
+    }
+}
+.formNewLestter{
+    >*{
+        @include rtl-float-left();
+    }
+}
+@media (max-width: $screen-xs-max) {
+  //newsletter
+  .pav-newsletter{
+
+    .explain{
+      display: none;
+    }
+    .input-newsletter{
+      @include rtl-padding-left(30px);
+    }
+    .email{
+      min-width: 250px ;
+    }
+  }
+}
+@media (max-width: $screen-phone) {
+    .pav-newsletter{
+        .input-newsletter{
+          @include rtl-padding-left(15px);
+        }
+        .input-newsletter >*{float: none}
+        .email{
+            min-width: 100px;
+        }
+    }
+    .social{
+        float: none;
+        border: none;
+        display: inline-block;
+    }
+}

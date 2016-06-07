@@ -1,0 +1,94 @@
+.logo-store{
+    display: block;
+    img{
+        @include size(226px,55px);
+    }
+}
+#logo-theme{
+    a{
+        background: url('#{$image-theme-path}logo.png') no-repeat;
+        display: block;
+        @include size(226px,55px);
+        span{
+          display: none;
+        }
+    }
+}
+.boxed{
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+.shapes.round {
+	background-color: darken($theme-color-default, 4%);
+    border: 1px solid darken($theme-color-default, 1%);
+    border-radius: 100%;
+    height: 20px;
+    @include rtl-right(10px);
+    top: 25%;
+    width: 20px;
+}
+.shapes.bottom {
+    @include rtl-left(5px);
+    top: 1px;
+}
+.shapes {
+    background-color: rgba(0, 0, 0, 0);
+    height: 0;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+.line{
+    border-top:2px solid $border-color ;
+}
+.quick-top-link{
+  padding:0 15px;
+  > *{
+    cursor:pointer;
+    padding:0 10px;
+  }
+}
+.link-active{
+    a{
+        color: $theme-color !important;
+    }
+}
+.link-effect{
+    li {
+        >a{
+            @include rtl-padding-left(0px);
+            @include transition(0.4s all);
+        }
+        :hover{
+            @include rtl-padding-left(10px);
+            @include transition(0.4s all);
+        }
+    }
+}
+.carousel-inner{
+    &:hover{
+        overflow: visible;
+    }
+}
+.noborder {
+    border: none;
+}
+.list-style{
+    font-style: italic;
+    list-style:none;
+}
+.links-variant{
+  @include rtl-padding-left(15px);
+  ul{
+    @include rtl-padding-left(15px);
+    list-style: none;
+    >li{
+      line-height: $line-height-list;
+    }
+  }
+}
+.hasline{
+  border-bottom:solid 1px $border-color;
+  margin: 10px 0;
+}

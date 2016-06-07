@@ -1,0 +1,196 @@
+ 
+/* BLOCK */
+.#{$block-selector} {
+    padding: $block-module-padding;
+    position: relative;
+    background: none;
+}
+
+.#{$block-heading-selector}{
+    text-align: center;
+    font-size:$block-module-heading-font-size ;
+    color: $block-module-heading-color;
+    text-transform:$block-module-heading-transform;
+    margin:$block-module-heading-margin;
+    position: relative;
+    &:before{
+        content:"";
+        width: 100%;
+        height: 1px;
+        background: $block-module-heading-border-before;
+        position: absolute;
+        @include rtl-left(0px);
+        top:50%;
+    }
+    > *{
+        background:$block-module-heading-bg ;
+        position: relative;
+        padding: $block-module-heading-padding;
+        font-weight: 300;
+        line-height: $block-module-heading-line-height;
+    }
+}
+
+.#{$block-content-selector} {
+        padding:$block-module-content-padding;
+        @include clearfix();
+}
+/*
+ * BLOCK STYLE layout
+ */
+
+/* BLOCK style in main content */
+#content{
+}
+
+##{$app-brand-prefix}o-showcase {
+    .box-heading{
+        display: none;
+    }
+}
+
+##{$app-brand-prefix}o-promotion {
+    .box{
+        background: none;
+        margin: $block-module-margin;
+    }
+    .box-heading{
+        display: none;
+    }
+    .box-content{
+        padding-bottom:$block-module-content-padding;
+    }
+}
+/* BLOCK style in footer */
+#footer{
+
+}
+
+.footer-top {
+    .box{
+        margin: $footer-top-content-margin;
+    }
+}
+
+.footer-center{
+    .box{
+        background: none;
+        .box-heading{
+            @include rtl-text-align-left();
+
+            &:before{
+                background: $footer-center-heading-boder;
+                top:100%;
+            }
+            >span{
+                background: none;
+                color:$footer-center-heading-color ;
+                font-size: $footer-center-heading-font-size;
+                font-weight: bold;
+                padding: 0;
+                line-height: $footer-center-heading-line-height;
+            }
+        }
+        .box-content{
+            line-height: $footer-center-content-line-height;
+            h5{
+                margin: 0;
+                padding: 0;
+                >a{
+                  color:$footer-center-content-title-color ;
+                }
+            }
+            .fa{
+                font-size: 18px;
+                color: $footer-center-content-icon-color;
+            }
+        }
+    }
+
+}
+
+/*BLOCK style in MASSBOTTOM*/
+.mass-bottom  {
+
+}
+
+/* BLOCK style in SIDEBAR */
+.sidebar {
+    .box{
+        margin: $sidebar-box-margin;
+        padding: $sidebar-box-padding;
+        border-bottom: $sidebar-box-border;
+    }
+    .box-heading{
+        font-size:$sidebar-heading-font-size;
+        font-weight: $sidebar-heading-font-weight;
+        @include rtl-text-align-left();
+        line-height:$sidebar-heading-line-height ;
+        > *{
+            padding:$sidebar-heading-padding ;
+        }
+        &:before{
+            background: none;
+        }
+    }
+    .box-content{
+        padding:$sidebar-box-content-padding;
+    }
+}
+
+// Contextual variations
+.#{$block-prefix}-default {
+  @include block-variant($panel-default-border, $panel-default-text, $panel-default-heading-bg, $panel-default-border);
+}
+.#{$block-prefix}-primary {
+  @include block-variant($panel-primary-border, $panel-primary-text, $panel-primary-heading-bg, $panel-primary-border);
+}
+.#{$block-prefix}-success {
+  @include block-variant($panel-success-border, $panel-success-text, $panel-success-heading-bg, $panel-success-border);
+}
+.#{$block-prefix}-info {
+  @include block-variant($panel-info-border, $panel-info-text, $panel-info-heading-bg, $panel-info-border);
+}
+.#{$block-prefix}-warning {
+  @include block-variant($panel-warning-border, $panel-warning-text, $panel-warning-heading-bg, $panel-warning-border);
+}
+.#{$block-prefix}-danger {
+  @include block-variant($panel-danger-border, $panel-danger-text, $panel-danger-heading-bg, $panel-danger-border);
+}
+
+.#{$block-prefix}-highlighted {
+  border-top: none;
+
+  .#{$block-prefix}-heading {
+
+  }
+  .#{$block-content-selector}{
+
+  }
+  .icon-heading {
+
+  }
+}
+.#{$block-prefix}-highlights {
+
+  .#{$block-prefix}-heading {
+
+  }
+  .icon-heading {
+  }
+  .heading-image {
+    display: none;
+  }
+}
+
+/* block inline style */
+.#{$block-prefix}-inline{
+    >*{
+        display: inline-block;
+        .active a{
+            padding: 0;
+            font-weight: bold;
+            color: $black !important;
+        }
+    }
+}

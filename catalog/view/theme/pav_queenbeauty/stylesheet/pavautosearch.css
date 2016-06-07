@@ -1,0 +1,126 @@
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/**
+ * Product Item Selectors
+ */
+/***********************************************************************/
+/*
+ * LAYOUT VARIABLES
+ */
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/*inline-block
+============================================*/
+/****/
+/* RIGHT TO LEFT */
+/* line 15, ../development/scss/pavautosearch.scss */
+#search-auto .button-search {
+  color: #42323b;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+}
+/* line 431, ../development/scss/mixins/_app.scss */
+.rtl #search-auto .button-search {
+  left: 10px;
+  right: auto;
+}
+/* line 26, ../development/scss/pavautosearch.scss */
+#search-auto .search-input-wrapper {
+  position: relative;
+  width: 80%;
+}
+/* line 30, ../development/scss/pavautosearch.scss */
+#search-auto .category_filter {
+  position: relative;
+  width: 20%;
+}
+/* line 33, ../development/scss/pavautosearch.scss */
+#search-auto .category_filter select {
+  cursor: pointer;
+  width: 100%;
+  height: 34px;
+  font-size: 13px;
+  color: #9c9c9c;
+  padding: 6px;
+  background-color: #f9f9f9;
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+}
+/* line 48, ../development/scss/pavautosearch.scss */
+#search-auto .category_filter span {
+  background-color: #F9F9F9;
+  pointer-events: none;
+  width: 30px;
+  height: 34px;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  line-height: 30px;
+  padding: 0 10px;
+}
+/* line 431, ../development/scss/mixins/_app.scss */
+.rtl #search-auto .category_filter span {
+  left: 0px;
+  right: auto;
+}
+
+/* line 62, ../development/scss/pavautosearch.scss */
+ul.ui-autocomplete {
+  z-index: 9999!important;
+}
+/* line 64, ../development/scss/pavautosearch.scss */
+ul.ui-autocomplete .active {
+  border: solid 1px #CCCCCC;
+}
+/* line 67, ../development/scss/pavautosearch.scss */
+ul.ui-autocomplete li {
+  display: block;
+  clear: both;
+  border-bottom: 1px solid #e9e9e9;
+  overflow: hidden;
+  background-color: #fff !important;
+  padding: 10px;
+}
+/* line 74, ../development/scss/pavautosearch.scss */
+ul.ui-autocomplete li img {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+}
+/* line 79, ../development/scss/pavautosearch.scss */
+ul.ui-autocomplete li .name {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+/* line 81, ../development/scss/pavautosearch.scss */
+ul.ui-autocomplete li .name:hover {
+  color: #7bbd42;
+}
+/* line 87, ../development/scss/pavautosearch.scss */
+ul.ui-autocomplete li a {
+  float: right;
+  margin: 5px !important;
+  border: 1px solid transparent;
+}
+/* line 325, ../development/scss/mixins/_app.scss */
+.rtl ul.ui-autocomplete li a {
+  float: left;
+}

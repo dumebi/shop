@@ -1,0 +1,360 @@
+
+/*$media (min-width: 992px) and (max-width: 1199px)*/
+@media (min-width: $screen-md) and (max-width: $screen-md-max){
+  //slider
+  .tparrows{
+      display: none;
+  }
+  //block
+  .product-block{
+      .action > *{
+
+          margin-right:0px;
+      }
+      .btn-variant{
+          padding: 8px 10px;
+      }
+  }
+  .product-list .product-block .right{
+      padding: 10px 0  !important;
+  }
+  //newsletter
+  .pav-newsletter{
+      .email{
+          min-width: 200px !important;
+      }
+  }
+  //deal
+  #productdeals .product-block .deal{
+      max-width:220px !important;
+  }
+}
+
+/*$media (min-width: 768px) and (max-width: 991px) {*/
+@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+  //topmenu
+  .quick-top-link{
+      padding: 0;
+      i.fa{
+          font-size: 16px;
+          padding-top: 5px;
+      }
+  }
+  //menu
+  .navbar-toggle{
+      display: block !important;
+  }
+  .navbar-collapse {
+      &.collapse {
+        display: none !important;
+      }
+  }
+  #mainmenutop .navbar-nav{
+      display: block;
+  }
+  .navbar-fixed-top{
+      position: absolute;
+  }
+  .hide-bar #topbar{
+      margin-top: 0;
+  }
+
+  #menu-offcanvas{
+      .dropdown .dropdown-menu{
+          display: none ;
+      }
+      .dropdown.open .dropdown-menu{
+            display: block ;
+      }
+  }
+  #header-main{
+      background:$header-bg !important ;
+  }
+  /*config layout button toggle,logo,search*/
+  #header-main .inner{
+      text-align: center;
+      display: block;
+  }
+
+  .mainnav{
+      position: absolute;
+      @include rtl-left(0);
+      top:0;
+  }
+  .box-search{
+      position: absolute;
+      top:0;
+      @include rtl-right(0);
+      line-height: 55px;
+  }
+  .logo-store{
+      display: inline-block;
+  }
+
+  //slider
+  .tparrows{
+    display: none;
+  }
+
+  //deal
+  .productdeals .product-block {
+      .deal{
+          @include rtl-right(30px !important);
+      }
+      .right{
+          opacity: 1 !important;
+          top: 80% !important;
+          visibility: visible !important;
+      }
+  }
+
+  //newsletter
+  .pav-newsletter{
+
+      .explain{
+          display: none;
+      }
+      .input-newsletter{
+          @include rtl-padding-left(30px);
+      }
+      .email{
+          min-width: 250px !important;
+      }
+  }
+  //product
+  .product-block{
+      .right{
+          box-shadow:none;
+          padding-bottom:0px;
+          @include rtl-padding-left(0);
+          opacity: 1;
+          position: relative;
+          visibility: visible;
+          top:0;
+      }
+      &:hover{
+          .right{
+              top:0;
+          }
+      }
+      .btn-variant{
+          padding: 8px 10px;
+      }
+  }
+  .product-list .product-block{
+      .right{
+          top:0;
+      }
+  }
+
+  .pav-colorbox,.product-zoom,.colorbox{
+      display: none;
+  }
+  //pavreassurances
+  a.pavreassurances{
+      display: none;
+  }
+  .col-sm-6:nth-child(2n+1){
+      @include rtl-clear-left ();
+  }
+  .zoomContainer{
+    display: none !important;
+  }
+
+}
+
+/*$media (max-width: 767px) {*/
+@media (max-width: $screen-xs-max) {
+  //topmenu
+  .quick-top-link{
+    padding: 0;
+    i.fa{
+      font-size: 16px;
+      padding-top: 5px;
+      color: $text-color;
+    }
+  }
+  //menu
+  .navbar-toggle{
+    display: block !important;
+  }
+  .navbar-collapse {
+    &.collapse {
+      display: none !important;
+    }
+  }
+  #mainmenutop .navbar-nav{
+    display: block;
+  }
+  .navbar-fixed-top{
+    position: absolute;
+  }
+  .hide-bar #topbar{
+    margin-top: 0;
+  }
+
+  #menu-offcanvas{
+    .dropdown .dropdown-menu{
+      display: none ;
+    }
+    .dropdown.open .dropdown-menu{
+      display: block ;
+    }
+  }
+  #header-main{
+     background:$header-bg !important;
+     position: relative !important;
+     top:0 !important;
+  }
+  /*config layout button toggle,logo,search*/
+  #header-main .inner{
+    text-align: center;
+    display: block;
+  }
+
+  .mainnav{
+    position: absolute;
+    @include rtl-left(0);
+    top:0;
+  }
+  .box-search{
+    position: absolute;
+    top:0;
+    @include rtl-right(0);
+    line-height: 55px;
+  }
+  .logo-store{
+    display: inline-block;
+  }
+
+  //slider
+  .tparrows{
+    display: none;
+  }
+
+  //deal
+  #productdeals .product-block {
+      .deal{
+          @include rtl-right(30px);
+      }
+      .right{
+          opacity: 1 !important;
+          top: 80% !important;
+          visibility: visible !important;
+      }
+  }
+
+  //product
+  .product-block{
+    .img{
+        display: inline-block;
+    }
+    .right{
+      box-shadow:none;
+      padding-bottom:0px;
+      @include rtl-padding-left(0);
+      opacity: 1;
+      position: relative;
+      visibility: visible;
+      top:0;
+    }
+    &:hover{
+      .right{
+        top:0;
+      }
+    }
+    .btn-variant{
+      padding: 8px 10px;
+    }
+  }
+  .product-list .product-block{
+    .right{
+      top:0;
+    }
+  }
+
+  .pav-colorbox,.product-zoom,.colorbox{
+    display: none;
+  }
+  .scrollup{
+      display: none !important;
+  }
+  //pavreassurances
+  a.pavreassurances{
+    display: none;
+  }
+  .col-sm-6:nth-child(2n+1){
+    @include rtl-clear-left ();
+  }
+  .zoomContainer{
+    display: none !important;
+  }
+  .product-list{
+      display: none;
+  }
+  .cart-info{
+    .model{
+        display: none;
+    }
+  }
+}
+
+/*$media (max-width: 480px) {*/
+@media (max-width: $screen-phone) {
+  #topbar{
+      .shopping-cart{
+          display: none;
+      }
+      .quick-top-link{
+          float: right !important;
+      }
+      .dropdown-menu{
+          right :0 !important;
+          left: inherit ;
+      }
+
+  }
+  .rtl #topbar .quick-top-link{
+      float: left !important;
+  }
+  .rtl #topbar .dropdown-menu{
+      left :0 !important;
+      right: inherit !important;
+  }
+  .mainnav{
+      top:-70px;
+  }
+  .pavtestimonial{
+      display: none;
+  }
+  .product-list{
+      display: none;
+  }
+  .product-filter{
+      .display{
+          clear: both;
+          display: none;
+      }
+      .filter-right{
+          span{display: none;}
+          display: inline-block;
+      }
+      .product-compare{
+          line-height: 50px;
+      }
+  }
+  .cart-info{
+      .model,.price,.image{
+          display: none;
+      }
+  }
+  .tabs-left > ul{
+      float: none;
+  }
+  .tabs-right > ul{
+      float: none;
+  }
+  .navbar-toggle .fa{
+      background: $text-color;
+  }
+}

@@ -1,0 +1,36 @@
+// Iconography
+// -------------------------
+$icon-font-path:          "../../fonts/";
+$theme-font-path:          "../../fonts/";
+// Image
+// -------------------------
+$image-theme-path:'../../image/';
+$image-theme-path-base : '../../image/pink/';
+
+$white:                         #FFFFFF;
+$pink:                          #EB6B7C;
+
+$theme-color:                   $pink !default; // using for default color of all pages such as background color for top menu, block header
+$theme-color-tertiary:          #AB2F3D !default;//#AB2F3D
+$theme-color-threedary:         $white !default;//#7b0046
+$theme-color-secondary:         #ebebeb !default;
+
+// ========================================================================
+
+// Topbar
+// ========================================================================
+    $topbar-bg: 						#000 !default;
+
+// Header
+// ========================================================================
+  $header-bg:  						  $theme-color !default;
+
+// Mini basket and shopping cart
+// ========================================================================
+    $cart-link-color : 				    $theme-color !default;
+
+// Footer
+// ========================================================================
+    $footer-center-heading-boder:       #d9d9d9 !default;
+    // footer center
+    $footer-center-content-title-color:	#000!default;

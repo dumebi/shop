@@ -1,0 +1,21 @@
+//
+#logo-theme{
+    a{
+        background: url('#{$image-theme-path-base}logo.png') no-repeat;
+    }
+}
+
+.icon-cart{
+    background:url('#{$image-theme-path-base}cart.png') no-repeat;
+}
+.pav-megamenu .dropdown:hover > a{
+    color:$white;
+}
+abbr + *,abbr + * + *{
+    color: #000;
+}
+.footer-center {
+    .fa{
+        color: $theme-color;
+    }
+}

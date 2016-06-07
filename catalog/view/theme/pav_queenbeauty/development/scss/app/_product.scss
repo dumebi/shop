@@ -1,0 +1,108 @@
+// Product Style
+// ========================================================================
+.#{$products-container-selector}{
+    position:relative;
+    background-color: $product-content-bg;
+    margin-top:$product-content-margin ;
+}
+
+.#{$products-row-selector}{
+    position:relative;
+    .#{$products-col-selector}{
+
+    }
+}
+
+.#{$product-block-selector}{
+    /*name product*/
+    .name{
+        @include rtl-float-left();
+        display: block;
+        line-height:$product-name-line-height ;
+        width: 75%;
+        font-size: $product-name-font-size;
+        margin: 0;
+        a{
+            color: $product-name-color;
+        }
+    }
+    //rating
+    .rating, .norating {
+        width: 25%;
+        display: block;
+        @include rtl-float-right();
+    }
+
+    .description{
+      display: none;
+      font-weight:$product-description-font-weight ;
+      font-style: italic;
+      padding: $product-description-padding 0;
+    }
+}
+
+.product-meta{
+    padding: $product-meta-padding;
+    @include rtl-text-align-left();
+    border: $product-border;
+    position: relative;
+}
+
+.action{
+    position: relative;
+    > *{
+        margin-right:$product-action-margin;
+    }
+}
+
+//label sale
+.product-label {
+    color: $product-label-color;
+    font-weight: $product-label-font-weight;
+    text-align: center;
+    z-index: 3;
+    font-size: $product-label-font-size;
+    text-transform: uppercase;
+    position: absolute;
+    @include rtl-left($product-label-padding);
+    top:$product-label-padding;
+    span{
+        @include size($product-label-size,$product-label-size);
+        @include border-radius(100%);
+        display: block;
+        line-height: $product-label-line-height;
+        @include label-variant($product-label-special-bg);
+    }
+
+    &.product-label-new, &.new-box{
+      @include label-variant($product-label-new-bg);
+      top:2px;
+    }
+    &.sale-percent-box{
+      @include label-variant($product-label-special-bg);
+      @include rtl-right(0);
+      @include rtl-left(inherit);
+      bottom:0;
+    }
+}
+
+//Price
+.price{
+    line-height:$product-price-line-height ;
+    padding:$product-price-padding;
+    color: $product-price-new-color;
+}
+.price-new,.special-price,.price-tax{
+    font-size: $product-price-new-font-size ;
+    color:$product-price-new-color ;
+}
+.price-old{
+    font-style: italic;
+    text-decoration: line-through;
+    padding:$product-price-old-padding ;
+    color:$product-price-ole-color ;
+}
+.price-gruop{
+    color:$product-price-ole-color ;
+    font-style: italic;
+}

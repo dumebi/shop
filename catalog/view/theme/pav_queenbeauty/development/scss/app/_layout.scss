@@ -1,0 +1,189 @@
+/******************************************************
+ * $package Pav Opencart Theme Framework for Opencart 1.5.x
+ * $version 1.1
+ * $author http://www.ptsothemes.com
+ * $copyright   Copyright (C) Augus 2013 PavoThemes.com <$emai:ptsothemes$gmail.com>.All rights reserved.
+ * $license     GNU General Public License version 2
+ *******************************************************/
+body{
+    #page{
+        overflow: hidden;
+    }
+    &.layout-boxed-md{
+        background: url("#{$image-theme-path}pattern/pattern19.png");
+        #page{  
+            max-width: $container-desktop + 20px; 
+            @include box-shadow(0 0 5px lighten($gray, 50%));
+            margin: 0 auto;    
+            background: $white;
+        }  
+        
+    }
+    &.layout-boxed-lg{
+        background: url("#{$image-theme-path}pattern/pattern18.png");
+        #page{  
+            max-width: $container-lg + 20px; 
+            @include box-shadow(0 0 5px lighten($gray, 50%));
+            margin: 0 auto;
+            background: $white;
+        }
+    }
+}
+
+/*
+* HEADER 
+*/
+
+/* Topbar */
+#topbar  {
+    padding: $topbar-padding;
+    min-height: $topbar-height;
+    font-size:$topbar-font-size;
+    @include container-layout-variant( $topbar-color, $topbar-bg, none, none );
+    ul li{
+        font-size: $topbar-font-size;
+    }
+}
+
+/* Header-menu */
+#header-main{
+    background-color: $header-bg;
+    color: $header-text-color;
+    >*{
+        position: relative;
+    }
+    .inner{
+        padding:$header-inner-padding;
+        vertical-align: middle;
+        display: table-cell;
+        & > *{
+            vertical-align: middle;
+            margin: 0;
+        }
+    }
+}
+.header-content{
+    display: table;
+    width: 100%;
+    position: relative;
+}
+.header-wrap{
+    min-height: $header-min-height;
+    margin: 0;
+}
+
+/*
+* MASSHEAD
+*/
+##{$app-brand-prefix}-masshead {
+    background-color: $masshead-bg;
+   .inner{
+        @include container-layout-variant($masshead-color, $masshead-bg, $masshead-color, lighten($masshead-color,5%) );      
+   }
+}
+
+/*
+* NAVIGATION
+*/
+##{$app-brand-prefix}-mainnav {
+    
+}
+
+/*
+* SLIDESHOW 
+*/
+##{$app-brand-prefix}-slideshow {
+}
+
+/*
+* SHOWCASE 
+*/
+##{$app-brand-prefix}-showcase {
+}
+/*
+* PROMOTION
+*/
+##{$app-brand-prefix}o-promotion {
+    background: $promotion-bg;
+    margin: $promotion-margin;
+}
+
+/*
+* MAIN CONTENT
+*/  
+#content {
+}
+.wrapper-danger{
+}
+.wrap-outline{
+}
+.content-bottom{
+    padding-top:$main-content-padding;
+}
+/*
+/* MASS TOP 
+*/
+##{$app-brand-prefix}o-mass-top {    
+//    margin-bottom: 18px;
+}
+
+/* FOOTER */
+#footer{
+
+}
+
+.footer-top{
+    .inner{
+        @include container-layout-variant($footer-top-color, $footer-top-bg, $footer-top-color, $footer-top-color );
+    }
+}
+.footer-center{
+    background: $footer-center-outside-bg;
+    .inner{
+        padding:$footer-center-content-padding;
+        @include container-layout-variant($footer-center-color, $footer-center-bg, $footer-center-color, $footer-center-color-hover );
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+    }
+}   
+.footer-bottom{
+
+}      
+
+
+/* POWER BY */
+#powered {
+    background: $power-bg;
+    .inner {
+        padding:$power-inner-padding ;
+        background: $power-bg;
+        overflow: hidden;
+    }
+    .copyright{
+        @include rtl-text-align-left ();
+        line-height: 20px;
+    }
+    a{
+        color: $power-link-color;
+    }
+}
+
+/* SIDEBAR */
+#oc-column-right{
+    @include rtl-padding-left($grid-gutter-width*2);
+    >*{
+        @include rtl-padding-left($grid-gutter-width);
+        @include rtl-border-left($sidebar-border );
+        @include rtl-box-shadow-more(-10px, 0,10px,-13px,#e8e8e8);
+    }
+}
+#oc-column-left{
+    @include rtl-padding-right($grid-gutter-width*2);
+    >*{
+        @include rtl-padding-right($grid-gutter-width);
+        @include rtl-border-right($sidebar-border );
+        @include rtl-box-shadow-more(10px, 0,10px,-13px,#e8e8e8);
+    }
+}

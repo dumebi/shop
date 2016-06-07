@@ -1,0 +1,19 @@
+// Iconography
+// -------------------------
+$icon-font-path:          "../../fonts/";
+$theme-font-path:          "../../fonts/";
+// Image
+// -------------------------
+$image-theme-path:'../../image/';
+$image-theme-path-base : '../../image/yellow/';
+
+$yellow:                          #D59946;
+
+$theme-color:                   $yellow !default; // using for default color of all pages such as background color for top menu, block header
+$theme-color-tertiary:          $theme-color !default;
+$theme-color-secondary:         #ebebeb !default;
+// Footer
+// ========================================================================
+$footer-center-heading-boder:       #d9d9d9 !default;
+// footer center
+$footer-center-content-title-color:	#000!default;

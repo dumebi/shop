@@ -1,0 +1,156 @@
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+$app-brand-prefix        : pav !default;
+
+/**
+ *   Blocks Layout Selectors 
+ */
+$block-prefix 			 : box!default;
+$block-selector          : box !default;
+$block-heading-selector  : box-heading !default;
+$block-heading-padding   : 15px 0 !default;
+
+$block-content-selector  : box-content !default;
+
+/**
+ * Product Item Selectors
+ */
+$products-container-selector : products-block !default;
+$products-row-selector 		 : products-row !default;
+$products-col-selector 		 : product-col !default;
+$product-block-selector      : product-block !default;
+//------- Path Variables
+$image-path:                   "images/"!default;
+$font-custom-path:             "../font/"!default;
+$image-theme-base-path:        "../img/"!default;
+$image-theme-icon-path:             "../img/icon/"!default;
+$image-base-path:              "../../../img/"!default;
+$image-skin-path:              "../../img/icon/"!default;
+$image-module-path:            "../../../img/icon/"!default;
+$module-path:                  "../../../modules/"!default;
+
+$image-theme-path:                   '../image/' !default;
+$theme-font-path	   :          	 "../fonts/" !default;
+
+
+/***********************************************************************/
+// some basic colors
+$brand-primary:         #428bca !default;
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              #220606 !default;
+$gray:                   #959595 !default;
+$gray-light:             #42323b;
+$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+
+$sky:                  			    #7bbd42 !default;  // Skin sky
+$blue:                              #6087D2 !default;  // Skin blue
+$yellow:                  			#ffc801 !default;  // Skin yellow
+$coral:								#EE6C92 !default;  // Slin Coral
+$rico:								#51BAA9 !default;  // Skin Rico
+$jungle-green:      				#37bc9b !default; //skin jungle green
+$green:                    			#8cc152 !default;  // Skin Green
+$red:                   			#cb2027 !default;  // Skin Red
+$pink:                  			#c3325f !default;
+$white:			 				    #FFFFFF !default;
+$black:							    #000000 !default;
+$cyandark:   						#4e4d49 !default;
+$orange:                			#df995e !default;
+$aqua: 								#75aab8 !default;
+$turquoise:                         #4ACFD4 !default; // label new
+$nav-border-color-hover:            #e2e2e2 !default;
+$golden-poppy:                      #F2BE01 !default;
+$valencia:      					#D44A4A !default;
+$tundora:                           #9c9c9c !default;  // Topbar + Vertical Menu Content
+$wild-sand:                         #ffffff !default;  // Background Body - default
+$silver:                            #f5f5f5 !default;  
+$light-grayish-red:    				#f6f5f5 !default;
+//------- Themes colors
+$red-light:            				#ff9999!default;
+$yellow-light:           			#ffdc73!default;
+$nocolor:							transparent!default;
+
+
+
+ 
+// some basic font family
+// ========================================================================
+$font-tamoha: "tahoma";
+$font-arial: "Arial";
+
+
+
+// Variables paths 
+// ========================================================================
+
+
+$font-family:			 			 "Open Sans", Helvetica, Arial, sans-serif !default;
+$font-family-secondary :             "Open Sans" !default;
+$font-family-tertiary  :             "Open Sanso" !default;
+$font-family-senary    : 		 	 "tahoma" !default;
+$font-family-septenary : 			 "tahoma" !default; 
+
+$font-icon-family 	   : 			 "FontAwesome" !default;
+
+
+
+
+//////////////////// Variables defined for Themes + Skins ////////////////
+
+$body-bg:                           #ffffff !default;
+$theme-color:  				        #7b0046 !default;
+
+
+
+$theme-color-default : 			    $gray !default;//#959595
+$theme-color-primary :				$theme-color !default;//#7b0046
+$theme-color-secondary:             $gray-dark !default;//#220606
+$theme-color-tertiary:              $gray-light !default;//#42323b
+$theme-color-senary:                #0096a8 !default;//#0096a8
+$theme-color-threedary:             $theme-color !default;//#7b0046
+
+$font-body-family	                : "tahoma" !default;
+$font-headding-family               : "tahoma" !default;
+$font-menu-family                   : "tahoma" !default;
+$font-highlighted-family            : "tahoma" !default;
+
+
+$theme-bg-default		            : $gray-lighter!default;
+$theme-bg-secondary 	            : $red!default; // using variable  for Theme  Skin
+$theme-bg-threedary  	            : $brand-warning!default; // using skin product list
+
+
+$font-size-base                     : 12px !default;
+
+ 
+$border-color                       :#ebebeb !default;
+
+$table-bg-color	                    :#ebebeb !default;
+
+
+//** Global text color on `<body>`.
+$text-color:           $gray!default;
+
+//** Global textual link color.
+$link-color:           $text-color !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      $theme-color !default;
+
+// Brand
+// ========================================================================
+$brand-border:                     1px solid $border-color !default;
+$brand-radius:                     0px !default;
+
+ 
+
+
+//
+// Variables
+// --------------------------------------------------
+$rtl-left : left;
+$rtl-right : right;

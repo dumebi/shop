@@ -1,0 +1,47 @@
+/******************************************************
+ * @package Pav Opencart Theme Framework for Opencart 1.5.x
+ * @version 3.0
+ * @author http://www.pavothemes.com
+ * @copyright	Copyright (C) May 2014 PavoThemes.com <@emai:pavothemes@gmail.com>.All rights reserved.
+ * @license		GNU General Public License version 2
+*******************************************************/
+
+// Using Variables Of Pavoframework
+// Core variables and mixins
+@import "compass";
+
+@import "vars/opencart";
+@import "vars/bootstrap";
+
+@import "mixins/app";
+@import "mixins/bootstrap";
+
+
+
+@import "app/base";
+
+@import "opencart/typo";
+ 
+@import "app/form";
+
+@import "app/layout";
+
+@import "app/block";
+
+@import "app/product";
+
+@import "opencart/opencart-modules";
+
+@import "opencart/opencart-pages";
+ 
+@import "app/menu";
+
+@import "opencart/offcanvas";
+
+@import "opencart/style";
+
+@import "app/animation";
+
+@import "opencart/responsive";
+
+

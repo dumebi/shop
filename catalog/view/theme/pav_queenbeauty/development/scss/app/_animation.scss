@@ -1,0 +1,223 @@
+// Products
+// ========================================================================
+.product-block{
+    /* Button add-cart,wishlist and compare */
+    .right{
+        @include opacity(0);
+        visibility: hidden;
+        @include transition(0.4s all);
+        position: absolute;
+        top:50%;
+        z-index: 999;
+        background:$product-meta-bg ;
+        width: 100%;
+        @include rtl-text-align-left;
+        @include rtl-left(0);
+        box-shadow:$product-box-shadow;
+        padding-bottom:20px;
+        @include rtl-padding-left(25px);
+    }
+    &:hover{
+        .right{
+            @include opacity(1);
+            @include transition(0.4s all);
+            visibility: visible;
+            top:100%;
+        }
+    }
+
+    /* zoom and quick-view */
+    .pav-colorbox, .product-zoom{
+        @include size(36px,36px);
+        @include transition(all 0.3s ease 0s);
+        position: absolute;
+        top: 50%;
+        margin: -18px 30px 0px;
+        @include opacity(0);
+        visibility: hidden;
+        @include transition(0.4s all);
+    }
+    &:hover{
+        .pav-colorbox, .product-zoom{
+            margin: -18px 4px 0px;
+            @include opacity(1);
+            visibility: visible;
+        }
+    }
+    .image{
+        position: relative;
+        text-align: center;
+      /*swap image*/
+      &:hover {
+        .hover-image {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      .hover-image {
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 100%;
+        left: 0;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+
+}
+
+.product-zoom{
+    right: 50%;
+}
+
+.pav-colorbox{
+    left: 50%;
+}
+/*Button Cart,Wishlist&Compare*/
+.action{
+    line-height: 40px;
+    > *{
+        display: inline-block;
+    }
+}
+.product-block{
+  .wishlist,.compare{
+      span{
+        display: none;
+      }
+  }
+}
+
+//BANNER
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.banner-wrapper{
+  cursor: pointer;
+  position:relative;
+}
+.banner-meta {
+  position:absolute;
+  text-align:center;
+  height:100%;
+  width:100%;
+  z-index: 10;
+}
+.banner-meta:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+.col-banner{
+  padding-top: $grid-gutter-width;
+}
+
+.banner-inner {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  color: $white;
+  max-width: 80%;
+  >span,.title{
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 48px;
+    position: relative;
+    font-weight: 300;
+    display:block;
+    color: $white;
+    &:before{
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 50px;
+        left:50%;
+        bottom: -5px;
+        margin-left: -25px;
+        background: $white;
+    }
+  }
+  >p{
+    line-height: 48px;
+    font-style: italic;
+  }
+}
+/*effect img*/
+.effect{
+    overflow: hidden;
+    background: $black;
+    img{
+        @include scale(1.05);
+        @include opacity(1);
+        @include transition(0.4s all);
+        width: 100%;
+    }
+    &:hover img{
+        @include scale(1);
+        @include opacity(0.7);
+        @include transition(0.4s all);
+    }
+}
+
+
+
+/*Effect Menu*/
+#topbar{
+    margin-top: 0px;
+    @include transition(0.8s all);
+}
+
+#header-top{
+    margin-top:0;
+    border-bottom:$header-top-border;
+    box-shadow: $header-top-shadow;
+    z-index: $topbar-top-z-index;
+    transition:all 0.8s ease 0s;
+}
+.navbar-fixed-top{
+    border-bottom:1px solid $border-color ;
+}
+.hide-bar{
+    #topbar{
+        margin-top: -56px;
+        @include transition(0.8s all);
+    }
+}
+    .header-inner{
+        position: relative;
+    }
+
+body[class*="-home"]{
+    #header-top{
+        box-shadow: none;
+        border:none;
+    }
+    .menu-bottom {
+        position: relative;
+        #header-main{
+            position: absolute;
+            top:$header-content-top;
+            background: none;
+            z-index: 9999;
+            width: 100%;
+        }
+        .header-content{
+            background: $header-bg;
+            padding:0 20px;
+
+        }
+    }
+    .menu-bottom.navbar-fixed-top{
+        padding-top: 90px;
+        background: $header-bg;
+    }
+}

@@ -1,0 +1,1 @@
+a:1:{i:1;a:12:{s:11:"description";a:2:{i:1;s:0:"";i:2;s:0:"";}s:12:"module_class";s:15:"specital-asdasd";s:4:"tabs";a:1:{i:0;s:7:"special";}s:5:"width";s:3:"273";s:6:"height";s:3:"273";s:12:"itemsperpage";s:1:"8";s:4:"cols";s:1:"4";s:5:"limit";s:2:"16";s:9:"layout_id";s:1:"1";s:8:"position";s:11:"mass_center";s:6:"status";s:1:"1";s:10:"sort_order";i:1;}}

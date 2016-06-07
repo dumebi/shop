@@ -1,0 +1,8 @@
+@import "../vars/bootstrap";
+@import "../vars/opencart";
+
+.rtl .action{
+  > *{
+      margin-right:0px;
+  }
+}
